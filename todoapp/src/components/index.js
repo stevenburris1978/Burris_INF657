@@ -1,3 +1,3 @@
-import Card from "./card";
+import TodoList from "./todolist";
 
-export {Card};
+export {TodoList};

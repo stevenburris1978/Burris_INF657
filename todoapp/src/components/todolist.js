@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
 
 })
 
-export default function Card(props){
+export default function TodoList(props){
     return <View style={styles.view}>
 
         <CheckBox style={styles.checkbox} />

@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, StatusBar, Platform} from "react-native";
-import { Card } from '../components';
+import { TodoList } from '../components';
 import { Sizes, Colors } from '../constants';
 
 const styles = StyleSheet.create({
@@ -14,11 +14,11 @@ const styles = StyleSheet.create({
 
 })
 
-export default function Homepage(){
+export default function TodoApp(){
     return
       <View style={styles.container}>
 
-        <Card text={"finish homework"} />
+        <TodoList text={"finish homework"} />
 
       </View>
 }
