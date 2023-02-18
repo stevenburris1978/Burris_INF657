@@ -1,17 +1,12 @@
-const colors = {
-    primary: "yellow",
-    secondary: "aqua",
-    accent: "pink"
+const Colors = {
+    primary: "aqua",
+    secondary: "yellow",
+    accent: "blue"
 }
 
-const sizes = {
-    padding: 19,
-    borderRadius: 15,
-    textBoxRadius: 25,
-    h1: 24,
-    h2: 20
+const Sizes = {
+    padding: 20,
+    borderRadius: 10,
 }
 
-
-
-export {colors, sizes}
+export {Colors, Sizes}
