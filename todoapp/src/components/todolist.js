@@ -1,34 +1,36 @@
 import React from 'react';
 import {View, Text, StyleSheet} from "react-native";
-import { Sizes, Colors } from '../constants';
+import { SIZES, COLORS, FONTS } from '../constants';
 import CheckBox from "@react-native-community/checkbox";
 
 const styles = StyleSheet.create({
 
     view: {
         width: '100%',
-        paddingVertical: 10,
-        paddingHorizontal: Sizes.padding,
-        borderRadius: Sizes.borderRadius,
+        paddingVertical: 11,
+        paddingHorizontal: SIZES.padding,
+        borderRadius: SIZES.borderRadius,
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: Colors.secondary,
+        backgroundColor: COLORS.secondary,
         elevation: 11,
-        shadowColor: Colors.secondary,
-        shadowOffset: {width: 1, height: 10},
+        shadowColor: COLORS.secondary,
+        shadowOffset: {width: 3, height: 10},
         shadowRadius: 10
 
     },
 
     text: {
-        color: Colors.primary
+        
+        ...FONTS.h2_semiBold,
+        color: COLORS.primary
     },
 
     checkbox: {
 
         borderRadius: 4,
         marginRight: 10,
-        backgroundColor: Colors.primary
+        backgroundColor: COLORS.primary
 
     }
 
