@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet} from "react-native";
-import { SIZES, COLORS, FONTS } from '../constants';
+import { SIZES, COLORS, FONTS, SHADOW } from '../constants';
 import CheckBox from "@react-native-community/checkbox";
 
 const styles = StyleSheet.create({
@@ -13,10 +13,9 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         backgroundColor: COLORS.secondary,
-        elevation: 11,
-        shadowColor: COLORS.secondary,
-        shadowOffset: {width: 3, height: 10},
-        shadowRadius: 10
+        ...SHADOW,
+        marginBottom: 10,
+
 
     },
 
