@@ -1,7 +1,7 @@
 const COLORS = {
     primary: "aqua",
     secondary: "yellow",
-    accent: "#dcdcdc",
+    accent: "green",
 }
 
 const SIZES = {
@@ -20,3 +20,4 @@ const SHADOW = {
 }
 
 export {COLORS, SIZES, SHADOW}
+

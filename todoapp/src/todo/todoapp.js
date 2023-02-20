@@ -42,11 +42,12 @@ const styles = StyleSheet.create({
     butn: {
         height: 30,
         width: 30,
-        backgroundColor: COLORS.accent,
+        backgroundColor: COLORS.secondary,
         borderRadius: SIZES.textBoxRadius,
         alignItems: "center",
         justifyContent: "center",
         marginRight: 30,
+        ...SHADOW,
         
     }
 
@@ -112,7 +113,7 @@ export default function TodoApp(){
             <TouchableOpacity 
               style={styles.butn} 
               onPress={() => addText(value)}>
-              <Text style={{fontSize: 20}}>+</Text>
+              <Text style={{fontSize: 20, color: "green", marginBottom: 3}}>+</Text>
             </TouchableOpacity>
           </View>
 

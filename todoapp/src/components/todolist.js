@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
 
     text: {
         
-        color: COLORS.primary
+        color: "green",
     },
 
     checkbox: {
