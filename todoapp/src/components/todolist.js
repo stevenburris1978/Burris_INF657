@@ -1,6 +1,6 @@
 import React from 'react';
-import {View, Text, StyleSheet, ScrollView} from "react-native";
-import { SIZES, COLORS, FONTS, SHADOW } from '../constants';
+import {View, Text, StyleSheet,} from "react-native";
+import { SIZES, COLORS, SHADOW } from '../constants';
 import CheckBox from "@react-native-community/checkbox";
 
 const styles = StyleSheet.create({
@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
 
     text: {
         
-        ...FONTS.h2_semiBold,
         color: COLORS.primary
     },
 

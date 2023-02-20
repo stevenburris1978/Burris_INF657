@@ -12,13 +12,6 @@ const SIZES = {
     h2: 20,
 }
 
-const FONTS = {
-
-    h1_semiBold: {fontSize: SIZES.h1, fontFamily:"ShantellSans_SemiBold"},
-    h2_semiBold: {fontSize: SIZES.h1, fontFamily:"ShantellSans_SemiBold"},
-
-}
-
 const SHADOW = {
     elevation: 7,
     shadowColor: COLORS.secondary,
@@ -26,4 +19,4 @@ const SHADOW = {
     shadowRadius: 10,
 }
 
-export {COLORS, SIZES, FONTS, SHADOW}
+export {COLORS, SIZES, SHADOW}

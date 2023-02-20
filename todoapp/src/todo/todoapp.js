@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
-import {View, Text, StyleSheet, TextInput, TouchableOpacity, FlatList} from "react-native";
+import {View, Text, StyleSheet, TextInput, TouchableOpacity, FlatList, Platform, StatusBar} from "react-native";
 import { TodoList } from '../components';
-import { SIZES, COLORS, FONTS, SHADOW } from '../constants';
+import { SIZES, COLORS, SHADOW } from '../constants';
 
 const styles = StyleSheet.create({
 
     container: {
 
-        
+        paddingTop: Platform.OS === "ios" ? 70 : StatusBar.currentHeight + 20,
         flex: 1,
         backgroundColor: COLORS.primary,
         padding: SIZES.padding
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         marginRight: 10,
         paddingLeft: 10,
         ...SHADOW,
-        ...FONTS.h2_semiBold,
+        
 
     },
     butn: {
@@ -89,7 +89,7 @@ export default function TodoApp(){
     }
     
     return <View style={styles.container}>
-        <Text style={{...FONTS.h1_semiBold, marginBottom: 10 }}>Ramsey, add to do.</Text>
+        <Text style={{marginBottom: 10 }}>Ramsey, add to do.</Text>
 {/* // uncomment this line below  to add card as tasks to the screen with using the code*/}
         {/* <TodoList text={"finish homework"} /> */}
         <FlatList style={{flex: 1}}
