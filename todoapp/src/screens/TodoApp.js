@@ -59,7 +59,7 @@ export default function TodoApp(){
         setList(txt => {
           return [
             ...txt,
-            text
+            {text: text, isSelected: false}
           ]
         })
         setValue("")
@@ -70,6 +70,22 @@ export default function TodoApp(){
       }
 
     }
+
+    function setIsSelected(index, value){
+      let data = []
+
+      for (let i = 0; i < list.length; i++) {
+        if (index === i){
+          data.push({...list[i], isSelected: value})
+        } else {
+          data.push(list[i])
+
+        }
+        
+      }
+
+      setList(data)
+    }
     
     return
       <View style={styles.container}>
@@ -78,7 +94,7 @@ export default function TodoApp(){
         {/* <TodoList text={"finish homework"} /> */}
         <FlatList style={{flex: 1}}
           data={list}
-          renderItem={({item}) => <TodoList text={item} />}
+          renderItem={({item, index}) => <TodoList data={item} index={index} setIsSelected={setIsSelected} />}
           keyExtractor={(item, index) => index.toString()}
 
         />  

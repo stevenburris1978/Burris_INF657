@@ -39,8 +39,15 @@ const styles = StyleSheet.create({
 export default function TodoList(props){
     return <View style={styles.view}>
 
-        <CheckBox style={styles.checkbox} />
-        <Text style={styles.text}>{props.text}</Text>
+        <CheckBox style={styles.checkbox}
+
+          value={props.data.isSelected}
+          onValueChange={(value) => props.setIsSelected(props.index, value)}
+        
+        />
+        {/* <Text style={styles.text}>{props.data.text}</Text> */}
+
+        <Text style={{...styles.text, textDecorationLine: props.data.isSelected ? "underline line-through" : "none"}}>{props.data.text}</Text>
 
       </View>
 }
