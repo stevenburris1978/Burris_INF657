@@ -30,8 +30,8 @@ const styles = StyleSheet.create({
 
         backgroundColor: COLORS.secondary,
         color: COLORS.primary,
-        width: "80%",
-
+        width: "90%",
+        height: 30,
         borderRadius: SIZES.textBoxRadius,
         marginRight: 10,
         paddingLeft: 10,
@@ -41,13 +41,13 @@ const styles = StyleSheet.create({
     },
     butn: {
         height: 30,
-        width: "7%",
+        width: 30,
         backgroundColor: COLORS.accent,
         borderRadius: SIZES.textBoxRadius,
         alignItems: "center",
         justifyContent: "center",
         marginRight: 30,
-        marginTop: 7,
+        
     }
 
 })
