@@ -40,12 +40,14 @@ const styles = StyleSheet.create({
 
     },
     butn: {
-        height: 40,
-        width: "15%",
+        height: 30,
+        width: "7%",
         backgroundColor: COLORS.accent,
         borderRadius: SIZES.textBoxRadius,
         alignItems: "center",
         justifyContent: "center",
+        marginRight: 30,
+        marginTop: 7,
     }
 
 })
@@ -102,8 +104,14 @@ export default function TodoApp(){
 
         />  
           <View style={styles.textWrap}>
-            <TextInput style={styles.textInput}  placeholder="Add To Do" onChangeText={text => setValue(text)} value={value} />
-            <TouchableOpacity style={styles.butn} onPress={() => addText(value)}>
+            <TextInput 
+              style={styles.textInput}  
+              placeholder="Add To Do" 
+              onChangeText={text => setValue(text)}
+              value={value} />
+            <TouchableOpacity 
+              style={styles.butn} 
+              onPress={() => addText(value)}>
               <Text style={{fontSize: 20}}>+</Text>
             </TouchableOpacity>
           </View>
