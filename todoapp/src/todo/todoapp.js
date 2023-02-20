@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     textInput: {
 
         backgroundColor: COLORS.secondary,
-        color: COLORS.primary,
+        color: "green",
         width: "90%",
         height: 30,
         borderRadius: SIZES.textBoxRadius,
@@ -118,3 +118,4 @@ export default function TodoApp(){
 
       </View>
 }
+

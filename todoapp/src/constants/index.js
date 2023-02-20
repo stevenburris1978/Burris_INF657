@@ -14,7 +14,7 @@ const SIZES = {
 
 const SHADOW = {
     elevation: 7,
-    shadowColor: COLORS.secondary,
+    shadowColor: COLORS.accent,
     shadowOffset: {width: 3, height: 10},
     shadowRadius: 10,
 }
