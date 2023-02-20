@@ -88,8 +88,7 @@ export default function TodoApp(){
       setList(data)
     }
     
-    return
-      <View style={styles.container}>
+    return <View style={styles.container}>
         <Text style={{...FONTS.h1_semiBold, marginBottom: 10 }}>Ramsey, add to do.</Text>
 {/* // uncomment this line below  to add card as tasks to the screen with using the code*/}
         {/* <TodoList text={"finish homework"} /> */}

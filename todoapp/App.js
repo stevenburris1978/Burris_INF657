@@ -2,11 +2,11 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { TodoApp } from './src/todo';
 import React from 'react';
-import * as SplashScreen from 'expo-splash-screen';
+// import * as SplashScreen from 'expo-splash-screen';
 import { useFonts } from 'expo-font';
 import { useCallback } from 'react';
 
-SplashScreen.preventAutoHideAsync();
+// SplashScreen.preventAutoHideAsync();
 
 
 export default function App() {
@@ -15,19 +15,19 @@ export default function App() {
     'ShantellSans_SemiBoldItalic': require('./assets/fonts/ShantellSans-SemiBold.ttf'),
   });
 
-  const onLayoutRootView = useCallback(async () => {
-    if (fontsLoaded) {
-      await SplashScreen.hideAsync();
-    }
-  }, [fontsLoaded]);
+  // const onLayoutRootView = useCallback(async () => {
+  //   if (fontsLoaded) {
+  //     await SplashScreen.hideAsync();
+  //   }
+  // }, [fontsLoaded]);
 
-  if (!fontsLoaded) {
-    return null;
-  }
+  // if (!fontsLoaded) {
+  //   return null;
+  // }
 
   return (
 
-    <TodoApp/>
+    <TodoApp />
 
   );
 }

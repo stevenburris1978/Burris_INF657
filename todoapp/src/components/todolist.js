@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet} from "react-native";
+import {View, Text, StyleSheet, ScrollView} from "react-native";
 import { SIZES, COLORS, FONTS, SHADOW } from '../constants';
 import CheckBox from "@react-native-community/checkbox";
 
@@ -45,9 +45,11 @@ export default function TodoList(props){
           onValueChange={(value) => props.setIsSelected(props.index, value)}
         
         />
-        {/* <Text style={styles.text}>{props.data.text}</Text> */}
+
 
         <Text style={{...styles.text, textDecorationLine: props.data.isSelected ? "underline line-through" : "none"}}>{props.data.text}</Text>
 
-      </View>
+        </View>
+
+      
 }
