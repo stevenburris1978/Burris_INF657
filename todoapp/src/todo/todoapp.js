@@ -22,13 +22,16 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "space-between",
         padding: SIZES.padding,
+        marginBottom: 40,
+
+
     },
     textInput: {
 
         backgroundColor: COLORS.secondary,
         color: COLORS.primary,
         width: "80%",
-        hieght: 40,
+
         borderRadius: SIZES.textBoxRadius,
         marginRight: 10,
         paddingLeft: 10,
@@ -89,7 +92,7 @@ export default function TodoApp(){
     }
     
     return <View style={styles.container}>
-        <Text style={{marginBottom: 10 }}>Ramsey, add to do.</Text>
+        <Text style={{marginBottom: 10, fontSize: SIZES.h1}}>Ramsey, add to do.</Text>
 {/* // uncomment this line below  to add card as tasks to the screen with using the code*/}
         {/* <TodoList text={"finish homework"} /> */}
         <FlatList style={{flex: 1}}
@@ -99,7 +102,7 @@ export default function TodoApp(){
 
         />  
           <View style={styles.textWrap}>
-            <TextInput style={styles.textInput} placeholder="Add To Do" onChangeText={text => setValue(text)} value={value} />
+            <TextInput style={styles.textInput}  placeholder="Add To Do" onChangeText={text => setValue(text)} value={value} />
             <TouchableOpacity style={styles.butn} onPress={() => addText(value)}>
               <Text style={{fontSize: 20}}>+</Text>
             </TouchableOpacity>

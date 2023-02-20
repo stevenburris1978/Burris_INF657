@@ -3,9 +3,6 @@ import { StyleSheet, Text, View } from 'react-native';
 import { TodoApp } from './src/todo';
 import React from 'react';
 
-
-
-
 export default function App() {
 
 
