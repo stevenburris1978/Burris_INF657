@@ -1,11 +1,13 @@
 import React from 'react';
-import {View, Text, StyleSheet,} from "react-native";
+import {View, Text, StyleSheet} from "react-native";
 import { SIZES, COLORS, SHADOW } from '../constants';
-import CheckBox from "@react-native-community/checkbox";
+// import CheckBox from "@react-native-community/checkbox";
+
+import Checkbox from 'expo-checkbox';
 
 const styles = StyleSheet.create({
 
-    view: {
+    viewNew: {
         width: '100%',
         paddingVertical: 11,
         paddingHorizontal: SIZES.padding,
@@ -36,8 +38,8 @@ const styles = StyleSheet.create({
 })
 
 export default function TodoList(props){
-    return <View style={styles.view}>
-        <CheckBox style={styles.checkbox}
+    return <View style={styles.viewNew}>
+        <Checkbox style={styles.checkbox}
           value={props.data.isSelected}
           onValueChange={(value) => props.setIsSelected(props.index, value)}       
         />

@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     textInput: {
 
         backgroundColor: COLORS.secondary,
-        color: "green",
+        color: "blue",
         width: "90%",
         height: 30,
         borderRadius: SIZES.textBoxRadius,
@@ -113,7 +113,7 @@ export default function TodoApp(){
             <TouchableOpacity 
               style={styles.butn} 
               onPress={() => addText(value)}>
-              <Text style={{fontSize: 20, color: "green", marginBottom: 3}}>+</Text>
+              <Text style={{fontSize: 20, color: "blue", marginBottom: 3}}>+</Text>
             </TouchableOpacity>
           </View>
 
