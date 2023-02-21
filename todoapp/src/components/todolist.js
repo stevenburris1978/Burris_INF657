@@ -1,8 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet} from "react-native";
 import { SIZES, COLORS, SHADOW } from '../constants';
-// import CheckBox from "@react-native-community/checkbox";
-
 import Checkbox from 'expo-checkbox';
 
 const styles = StyleSheet.create({
