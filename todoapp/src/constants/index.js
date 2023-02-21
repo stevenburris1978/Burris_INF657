@@ -17,6 +17,7 @@ const SHADOW = {
     shadowColor: COLORS.accent,
     shadowOffset: {width: 3, height: 10},
     shadowRadius: 10,
+    
 }
 
 export {COLORS, SIZES, SHADOW}

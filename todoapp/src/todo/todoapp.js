@@ -72,7 +72,7 @@ export default function TodoApp(){
         setValue("")
 
       } else {
-        alert("input something")
+        alert("you need to input something")
 
       }
 
@@ -95,7 +95,7 @@ export default function TodoApp(){
     }
     
     return <View style={styles.container}>
-        <Text style={{marginBottom: 10, fontSize: SIZES.h1}}>Ramsey, add to do.</Text>
+        <Text style={{marginBottom: 10, fontSize: SIZES.h1}}>Hi Ramsey, add your to do</Text>
 {/* // uncomment this line below  to add card as tasks to the screen with using the code*/}
         {/* <TodoList text={"finish homework"} /> */}
         <FlatList style={{flex: 1}}
